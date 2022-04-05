@@ -1,0 +1,14 @@
+//
+//  Base.xcconfig
+//  ThingsApp
+//
+//  Created by Isidora Lazic on 4.4.22..
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = ThingsApp
+PRODUCT_BUNDLE_IDENTIFIER = com.isidora.ThingsApp
+USER_DEFAULTS_SUITE_NAME = group.$(PRODUCT_BUNDLE_IDENTIFIER)
+ONLY_ACTIVE_ARCH[config=Production][sdk=*][arch=*] = YES

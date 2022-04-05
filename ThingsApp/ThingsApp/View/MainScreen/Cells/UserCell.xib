@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="82" id="KGk-i7-Jjw" customClass="UserCell" customModule="ThingsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua6-ki-B67">
+                        <rect key="frame" x="25" y="0.0" width="270" height="55"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cDz-SX-4Iz">
+                                <rect key="frame" x="10" y="10" width="250" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thing" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYz-AA-Yoc" userLabel="Name Label">
+                                        <rect key="frame" x="0.0" y="9" width="250" height="17"/>
+                                        <color key="tintColor" red="0.21810321350762527" green="0.27407577614379086" blue="0.90683721405228757" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-zz-x3E">
+                                        <rect key="frame" x="250" y="0.0" width="36" height="35"/>
+                                        <color key="tintColor" red="0.79060325025382483" green="1" blue="0.85461332339363461" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="8yP-AL-ndC"/>
+                                            <constraint firstAttribute="width" constant="36" id="oFI-7G-ThS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61399999999999999" green="0.53715803139999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="HMd-3Y-RaQ"/>
+                            <constraint firstItem="cDz-SX-4Iz" firstAttribute="leading" secondItem="ua6-ki-B67" secondAttribute="leading" constant="10" id="MYN-ai-yaD"/>
+                            <constraint firstItem="cDz-SX-4Iz" firstAttribute="top" secondItem="ua6-ki-B67" secondAttribute="top" constant="10" id="RDf-Vr-zBl"/>
+                            <constraint firstAttribute="trailing" secondItem="cDz-SX-4Iz" secondAttribute="trailing" constant="10" id="h3Z-Tg-wuv"/>
+                            <constraint firstAttribute="bottom" secondItem="cDz-SX-4Iz" secondAttribute="bottom" constant="10" id="ijF-m3-hUr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ua6-ki-B67" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="QCj-vi-VFW"/>
+                    <constraint firstAttribute="trailing" secondItem="ua6-ki-B67" secondAttribute="trailing" constant="25" id="XoG-9h-pj0"/>
+                    <constraint firstAttribute="bottom" secondItem="ua6-ki-B67" secondAttribute="bottom" constant="12" id="jZD-1N-7wP"/>
+                    <constraint firstItem="ua6-ki-B67" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xOn-jV-FA4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="ua6-ki-B67" id="CSR-hv-2Sk"/>
+                <outlet property="checkmarkImageView" destination="0wH-zz-x3E" id="UNn-EL-UfZ"/>
+                <outlet property="nameLabel" destination="vYz-AA-Yoc" id="mqV-JN-3u6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
